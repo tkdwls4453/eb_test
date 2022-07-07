@@ -39,7 +39,7 @@ jobs:
       - name: Generate deployment package # (1)
         run: |
           mkdir -p deploy
-          cp build/libs/ebtest-0.0.1-SNAPSHOT.jar deploy/application.jar
+          cp ebtest/build/libs/ebtest-0.0.1-SNAPSHOT.jar deploy/application.jar
           cp Procfile deploy/Procfile
           cp -r .ebextensions deploy/.ebextensions
           cp -r .platform deploy/.platform
